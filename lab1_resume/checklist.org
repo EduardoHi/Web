@@ -1,0 +1,9 @@
+* TODO Nombre
+* TODO Datos Personales
+* TODO Work Experience
+* TODO Academic Projects
+* TODO Side Projects
+* TODO Education
+* TODO Technical Skills
+* TODO Languages
+* TODO Links
