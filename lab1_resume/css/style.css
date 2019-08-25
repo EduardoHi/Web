@@ -2,10 +2,29 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: black;
+    color: #DDD;
+}
+
+a {
+    color: rgb(0, 221, 221);
 }
 
 section {
-    border: solid black 2px;
+    border-left: solid #DDD 3px;
+    height: 100%;
+    padding-left: 8px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+.big-section {
+    flex: 2;
+    min-width: 550px;
+}
+
+.small-section {
+    flex: 1;
 }
 
 ul {
@@ -18,7 +37,35 @@ li {
 }
 
 .exp-item {
-    border-left: solid black 2px;
-    padding-left: 2px;
+    border-left: solid #DDD 2px;
+    padding-left: 4px;
 }
 
+.exp-item-details > li {
+    border-left: solid 1px;
+    padding-left: 4px;
+}
+
+#sections {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.v-col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+}
+
+tr {
+    border-bottom: solid #333 1px;
+}
+
+table { 
+    border-collapse: collapse; 
+}
+
+section > h2:first-child, section > h3:first-child {
+    margin-top: 0px;
+}

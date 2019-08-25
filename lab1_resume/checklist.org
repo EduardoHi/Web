@@ -1,9 +1,12 @@
-* TODO Nombre
+* DONE Nombre
 * TODO Datos Personales
-* TODO Work Experience
-* TODO Academic Projects
-* TODO Side Projects
-* TODO Education
-* TODO Technical Skills
-* TODO Languages
+* DONE Work Experience
+* DONE Academic Projects
+* DONE Side Projects
+* DONE Education
+* DONE Technical Skills
+* DONE Languages
 * TODO Links
+* TODO Extras
+** DONE Interests
+*** Functional Programming
