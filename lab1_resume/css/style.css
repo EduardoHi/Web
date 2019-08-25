@@ -1,5 +1,4 @@
 
-
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: black;
@@ -18,15 +17,6 @@ section {
     margin-bottom: 12px;
 }
 
-.big-section {
-    flex: 2;
-    min-width: 550px;
-}
-
-.small-section {
-    flex: 1;
-}
-
 ul {
     padding: 0px;
     list-style: none;
@@ -36,14 +26,16 @@ li {
     margin: 0.5em 1em;
 }
 
-.exp-item {
-    border-left: solid #DDD 2px;
-    padding-left: 4px;
+tr {
+    border-bottom: solid #333 1px;
 }
 
-.exp-item-details > li {
-    border-left: solid 1px;
-    padding-left: 4px;
+table {
+    border-collapse: collapse;
+}
+
+section > h2:first-child, section > h3:first-child {
+    margin-top: 0px;
 }
 
 #sections {
@@ -58,14 +50,21 @@ li {
     height: 100%;
 }
 
-tr {
-    border-bottom: solid #333 1px;
+.big-section {
+    flex: 2;
+    min-width: 550px;
 }
 
-table { 
-    border-collapse: collapse; 
+.small-section {
+    flex: 1;
 }
 
-section > h2:first-child, section > h3:first-child {
-    margin-top: 0px;
+.exp-item {
+    border-left: solid #DDD 2px;
+    padding-left: 4px;
+}
+
+.exp-item-details > li {
+    border-left: solid 1px;
+    padding-left: 4px;
 }
