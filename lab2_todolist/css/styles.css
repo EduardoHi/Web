@@ -1,0 +1,160 @@
+
+body {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: Verdana, sans-serif;
+    background-color: black;
+    color: #DDD;
+}
+
+a {
+    color: rgb(0, 221, 221);
+}
+
+#todo-list {
+    display: flex;
+}
+
+.container {
+  margin: auto;
+  padding: 10px;
+  width: 400px;
+  /* background-color: #FEFEFE; */
+  border-radius: 3px;
+  border: 1px solid white;
+  opacity: 0.9;
+  /* box-shadow: 3px 3px 10px 0px rgba(161,161,161,0.7); */
+}
+
+h1 {
+  text-align: center;
+}
+
+.list {
+  padding: 10px 15px 30px 15px;
+}
+
+li {
+  list-style: none;
+  padding: 3px 0px;
+}
+
+li > span {
+  padding-left: 10px;
+}
+
+input[type="text"] {
+  margin: auto;
+  padding: 10px;
+  width: 300px;
+  display: block;
+  border: 0px;
+  border-bottom: 1px solid #4F545F;
+  border-radius: 2px;
+  outline: none;
+  background: none;
+  color: white;
+}
+
+input[type="text"]:focus {
+  border-bottom: 2px solid #22B4E2;
+}
+
+
+input:focus, input:active {
+  border-left: 2px solid #22B4E2;
+}
+
+.done {
+  text-decoration: line-through #8f919c;
+  /* color: #8f919c; */
+}
+
+
+label {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Custom Checkbox because the default checkbox
+ * colors suck
+ */
+
+input {
+  position: relative !important;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  margin: 8px;
+  box-sizing: content-box;
+  overflow: hidden;
+  border-left: 2px solid rgba(0,0,0,0);
+  padding-left: 2px;
+  outline: none;
+}
+
+input:before {
+    content: '';
+    display: block;
+    box-sizing: content-box;
+    width: 12px;
+    height: 12px;
+    border: 2px solid gray;	/* text lighter */
+    transition: 0.2s border-color ease;
+    padding: 2px;
+    border-radius: 2px;
+}
+  
+input:checked:before {
+    border-color: red;		/*brand */
+    transition: 0.5s border-color ease;
+}
+  
+input:disabled:before {
+    border-color: gray;	/* text lighter */
+    background-color: gray;	/* text lighter */
+}
+
+input:after {
+    content: '';
+    display: block;
+    position: absolute;
+    box-sizing: content-box;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 50%;
+    background-color: red; 	/* brand */
+    width: 16px;
+    height: 16px;
+    border-radius: 100vh;
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+input[type="checkbox"]:after {
+    width: 10px;
+    height: 16px;
+    border-radius: 0;
+    transform: translate(-50%, -85%) scale(0) rotate(45deg);
+    background-color: transparent;
+    box-shadow: 4px 4px 0px 0px red; /* brand */
+}
+
+input[type="checkbox"]:checked:after {
+    animation: toggleOnCheckbox 0.2s ease forwards;
+}
+
+@keyframes toggleOnCheckbox {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -85%) scale(0) rotate(45deg);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translate(-50%, -85%) scale(0.9) rotate(45deg);
+  }
+  
+  100% {
+    transform: translate(-50%, -85%) scale(0.8) rotate(45deg);
+  }
+}
