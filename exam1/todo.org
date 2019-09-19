@@ -1,0 +1,8 @@
+
+* DONE Esconder Comentarios hasta darle click a Escribir reseña
+
+* DONE Cargar comentarios de comentarios.xml
+
+* TODO Agregar un comentario nuevo
+
+* TODO Limpiar inputs
