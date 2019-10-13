@@ -20,7 +20,7 @@ request(
 darkSkyRequest = (lat,lon) => {
     request(
         darkSkyUrl(lon,lat),
-        function (error, response, body) {
+        function(error, response, body) {
             body = JSON.parse(body)
             const msg = `${body.daily.data[0].summary} Actualmente esta a ${body.currently.temperature}°C. Hay ${body.currently.precipProbability*100}% de posibilidad de lluvia.`;
             console.log(msg);
