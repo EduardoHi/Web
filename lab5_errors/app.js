@@ -29,6 +29,10 @@ request(
                 console.log("MapBox:\n\t" + body.message);
                 return;
             }
+            if(body.features.length === 0) {
+                console.log("MapBox:\n\t City not found");
+                return;
+            }
             const [lat,lon] = body.features[0].center;
             darkSkyRequest(lat,lon)
         });
