@@ -1,9 +1,15 @@
-const credentials = require('./credentials.js');
 const request = require('request');
 const express = require('express');
 
-const dskey = credentials.DARK_SKY_SECRET_KEY;
-const mbkey = credentials.MAPBOX_TOKEN;
+const fs = require("fs");
+
+let credentials = {};
+if(fs.existsSync('./credentials.js')) {
+    credentials = require('./credentials.js');
+}
+
+const dskey = credentials.DARK_SKY_SECRET_KEY || process.env.DARK_SKY_SECRET_KEY;
+const mbkey = credentials.MAPBOX_TOKEN || process.env.MAPBOX_TOKEN;
 
 const darkSkyUrl = (lat, lon) => `https://api.darksky.net/forecast/${dskey}/${lat},${lon}?lang=es&units=si`;
 const mapBoxUrl = (city) => `https://api.mapbox.com/geocoding/v5/mapbox.places/${city}.json?access_token=${mbkey}`;
