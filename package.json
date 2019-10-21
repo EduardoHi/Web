@@ -1,0 +1,13 @@
+{
+    "name": "lab de web",
+    "description": "",
+    "version": "1.0.0",
+    "author": "Eduardo Hidalgo <hi@eno>",
+    "license": "MIT",
+    "main": "",
+    "scripts": {
+        "start" : "cd lab6_weather_server && npm start"
+    },
+    "dependencies": {},
+    "devDependencies": {}
+}
