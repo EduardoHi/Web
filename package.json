@@ -4,7 +4,7 @@
     "version": "1.0.0",
     "author": "Eduardo Hidalgo <hi@eno>",
     "license": "MIT",
-    "main": "",
+    "main": "lab6_weather_server/app.js",
     "scripts": {
         "heroku-prebuild": "cd lab6_weather_server && npm install",
         "start" : "cd lab6_weather_server && npm start"
