@@ -6,8 +6,8 @@
     "license": "MIT",
     "main": "lab6_weather_server/app.js",
     "scripts": {
-        "heroku-prebuild": "cd lab6_weather_server && npm install",
-        "start" : "cd lab6_weather_server && npm start"
+        "heroku-prebuild": "cd lab7_crud && npm install",
+        "start" : "cd lab7_crud && npm start"
     },
     "dependencies": {},
     "devDependencies": {}
